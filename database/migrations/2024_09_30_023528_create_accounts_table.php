@@ -17,8 +17,7 @@ return new class extends Migration
             $table->foreignId('user_id')
                 ->nullable()
                 ->constrained()
-                ->nullOnDelete()
-                ->nullOnUpdate();
+                ->nullOnDelete();
 
             $table->string('name');
             $table->timestamps();
